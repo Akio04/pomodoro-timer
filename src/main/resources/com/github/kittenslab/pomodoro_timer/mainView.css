@@ -1,0 +1,31 @@
+.root, .background {
+    -fx-pref-width: 320;
+    -fx-pref-height: 320;
+}
+
+.arc {
+    -fx-fill: #E0E0E0;
+}
+
+.minute, .time {
+    -fx-text-fill: #E0E0E0;
+    -fx-font-size: 36;
+}
+
+.close {
+    -fx-min-width: 16;
+    -fx-min-height: 16;
+    -fx-pref-width: 16;
+    -fx-pref-height: 16;
+    -fx-font-size: 0;
+    -fx-opacity: 0.8;
+    -fx-background-color: transparent;
+    -fx-background-image: url("cross_mark.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: auto;
+}
+
+.close:hover {
+    -fx-opacity: 1.0;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+
+<StackPane fx:id="root" styleClass="root" alignment="TOP_LEFT" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.github.kittenslab.pomodoro_timer.MainViewModel" stylesheets="@mainView.css">
+    <Pane fx:id="background" styleClass="background"/>
+    <AnchorPane>
+        <Arc fx:id="arc" styleClass="arc" centerX="160" centerY="160" radiusX="120" radiusY="120" startAngle="90" type="ROUND"/>
+        <Circle fx:id="circle" styleClass="circle" centerX="160" centerY="160" radius="120" scaleX="0.5" scaleY="0.5"/>
+    </AnchorPane>
+    <FlowPane alignment="CENTER">
+        <Label fx:id="minute" styleClass="minute"/>
+    </FlowPane>
+    <StackPane fx:id="userInterface" opacity="0">
+        <FlowPane alignment="CENTER">
+            <Label fx:id="time" styleClass="time" textAlignment="CENTER"/>
+        </FlowPane>
+        <FlowPane alignment="TOP_RIGHT">
+            <Button styleClass="close" onAction="#onAction"/>
+        </FlowPane>
+    </StackPane>
+</StackPane>
